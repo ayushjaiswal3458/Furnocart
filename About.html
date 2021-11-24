@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Furnocart</title>
+    <link rel="stylesheet" href="homeStyle.css" />
+    <style>
+      .heading {
+        display: inline;
+        position: relative;
+        color: brown;
+      }
+      .heading::after {
+        position: absolute;
+        left: 0;
+        bottom: 0rem;
+        display: block;
+        width: 0;
+        height: 0.2rem;
+        content: "";
+        background-color: orange;
+        transition: all 0.2s;
+      }
+      .heading:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="logo-area" href="./index.html">
+      <img
+        class="logo"
+        style="width: 6rem; height: 6rem"
+        src="./images/logoDummy.png"
+      />
+      <h1 class="logoName" style="font-size: 3rem">Furnocart</h1>
+    </a>
+    <div style="padding: 2rem">
+      <h1 class="heading">About</h1>
+      <p style="margin-top: 1rem; text-align: justify; font-size: 1.5rem">
+        Furnocart is a great website for the people who want to buy and
+        decorate their houses with beautiful and branded furniture. Customers
+        can view and purchase variety of furniture items at the best prices.
+      </p>
+      <h2 style="margin-top: 1rem">
+        <span class="heading">Email: </span>ayush.gupta_cs19@gla.ac.in
+      </h2>
+      <h2 style="margin-top: 1rem">
+        <span class="heading">Address: </span>17km Stone, NH-2, Mathura-Delhi
+        Road Mathura, Chaumuhan, Uttar Pradesh 281406
+      </h2>
+    </div>
+  </body>
+</html>

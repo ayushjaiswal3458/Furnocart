@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.defaultLink {
+  color: black;
+  margin: 0.5rem;
+}
+.defaultLink:hover {
+  color: brown;
+}
+.navbar {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+.layer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+}
+.layer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0rem 1rem 0rem;
+  border-top: 1px solid lightgray;
+}
+.layer2Mini {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0rem 1rem 0rem;
+}
+.logo-area {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+.logoName {
+  color: rgb(42, 130, 165);
+  font-size: 3rem;
+  text-shadow: 0.2rem 0.1rem 0rem rgb(0, 255, 255);
+}
+.logoName:hover {
+  text-shadow: 0.2rem 0.2rem 0.3rem orange;
+}
+.searchArea {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0rem 0rem 0rem 1rem;
+}
+.searchBox {
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid lightgray;
+  padding: 0.5rem 3rem 0.5rem 0.5rem;
+  border-radius: 4px;
+  outline: 0px;
+  font-size: 16px;
+}
+.searchBox:focus {
+  outline: 1px solid orange;
+}
+.searchIcon {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  color: black;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./icons/search-2.svg);
+}
+.searchIcon:active {
+  transform: scale(0.9);
+}
+.layer2IconGroup {
+  display: flex;
+}
+.layer2Icon {
+  width: 30px;
+  height: 30px;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.layer2Icon:hover {
+  stroke: orange;
+}
+.account {
+  position: relative;
+}
+.account:hover .headerMenu {
+  opacity: 100%;
+  z-index: 1;
+  transform: translateY(-2rem);
+}
+.layer3 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.layer3Header {
+  position: relative;
+  width: fit-content;
+  height: 2rem;
+  font-weight: normal;
+}
+.layer3Header:hover {
+  color: brown;
+}
+.layer3Header::after {
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  display: block;
+  width: 0;
+  height: 0.2rem;
+  content: "";
+  background-color: orange;
+  transition: all 0.2s;
+}
+.layer3Header:hover::after {
+  width: 100%;
+}
+.headerMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 4rem;
+  opacity: 0;
+  width: 10rem;
+  background-color: ghostwhite;
+  transition: all 0.5s;
+  z-index: -1;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 0px 1px 1px 1px;
+}
+.layer3Header:hover .headerMenu,
+.layer3Header:active .headerMenu,
+.layer3Header:focus .headerMenu {
+  opacity: 100%;
+  z-index: 1;
+  transform: translateY(-2rem);
+}
+
+.headerMenuOption {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  transition: 0.2s;
+}
+.headerMenuOption:hover {
+  background-color: lightgray;
+}
+.content {
+  width: 90%;
+}
+.slideshow {
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+.slideshowNav {
+  position: absolute;
+  top: 40%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  opacity: 50%;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+.slideshowNav:hover {
+  opacity: 100%;
+}
+.slideshowNav:active {
+  transform: scale(0.9);
+}
+.reviewSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0rem 4em 0rem;
+}
+.reviewHeaderSection {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.reviewHeader {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.1rem solid orange;
+}
+.reviewNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-style: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.reviewNav:hover {
+  transition: 0.5s;
+  color: brown;
+  text-shadow: 0.1rem 0.1rem 0.3rem orange;
+}
+.reviewContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.customerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 50%;
+  padding: 1rem;
+}
+.customerAvatar {
+  width: 8rem;
+  height: 8rem;
+}
+.customerName {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+.reviewDivider {
+  width: 0.2rem;
+  height: 8rem;
+  background-color: lightsalmon;
+}
+.review {
+  width: 50%;
+  padding: 1rem;
+  margin-left: 4rem;
+  font-style: oblique;
+}
+.reviewText {
+  width: 75%;
+  text-align: justify;
+}
+.bestsellersSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0rem 4em 0rem;
+  gap: 2rem;
+  width: 100%;
+}
+.bestsellersHeader {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 2rem;
+  border-bottom: 0.1rem solid orange;
+}
+.bestsellersItems {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.bestsellersItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.2rem;
+  margin: 0.5rem;
+  padding: 0.2rem;
+  background-color: ghostwhite;
+  box-shadow: 0.1rem 0.1rem 1rem lightgray;
+  cursor: pointer;
+}
+.bestsellerImageDiv {
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bestsellerImage {
+  width: 100%;
+  transition: 0.5s;
+}
+.bestsellerImage:hover {
+  transform: scale(120%);
+}
+.bestsellerInfo {
+  display: flex;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.bestsellerProductName {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.bestsellerPrice {
+  font-size: 1rem;
+  font-style: oblique;
+  font-weight: normal;
+  color: gray;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 0rem 0rem 3rem 0rem;
+  border: 0.01px solid lightgray;
+  background-color: ghostwhite;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.siteLinksSection {
+  display: flex;
+  width: 60%;
+  margin: 1.5rem 0rem 0rem 1rem;
+  flex-direction: column;
+  justify-content: left;
+}
+.siteLink {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: orange;
+  margin: 0.5rem;
+}
+.siteLink:hover {
+  color: brown;
+}
+.socialMediaSection {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 1rem;
+  width: 20%;
+}
+.socialMediaLinks {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  opacity: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s;
+}
+.socialMediaLinks:hover {
+  opacity: 100%;
+  transform: translateY(-0.5rem);
+}
+@media (max-width: 1024px) {
+  .navbar {
+    width: 95%;
+  }
+  .content {
+    width: 100%;
+  }
+}
+@media (max-width: 950px) {
+  .bestsellersItems {
+    grid-template-columns: 50% 50%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .socialMediaSection {
+    margin-top: 1rem;
+    width: 70%;
+  }
+  .reviewNav {
+    margin: 1rem;
+  }
+  .layer2 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .bestsellersItems {
+    grid-template-columns: 100%;
+  }
+  .reviewContent {
+    flex-direction: column;
+  }
+  .reviewDivider {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .socialMediaSection {
+    margin-top: 1rem;
+    width: 70%;
+  }
+  .reviewNav {
+    margin: 1rem;
+  }
+  .layer2 {
+    flex-direction: column;
+  }
+}

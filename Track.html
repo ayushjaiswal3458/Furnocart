@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Furnocart</title>
+    <link rel="stylesheet" href="homeStyle.css" />
+    <style>
+      .heading {
+        display: inline;
+        position: relative;
+        color: brown;
+      }
+      .heading::after {
+        position: absolute;
+        left: 0;
+        bottom: 0rem;
+        display: block;
+        width: 0;
+        height: 0.2rem;
+        content: "";
+        background-color: orange;
+        transition: all 0.2s;
+      }
+      .heading:hover::after {
+        width: 100%;
+      }
+      .parent {
+        display: flex;
+        margin-top: 4rem;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        padding: 0.5rem;
+        border: 0.1rem solid lightgray;
+        right: auto;
+        border-radius: 1rem;
+      }
+      .signup {
+        width: 40%;
+      }
+      .LogoArea {
+        width: 60%;
+      }
+      @media (max-width: 950px) {
+        .parent {
+          margin-top: 4rem;
+          width: 100%;
+          flex-direction: column;
+          border: none;
+        }
+        .signup {
+          width: 90%;
+          margin-top: 2rem;
+        }
+      }
+      @media (max-width: 600px) {
+        .parent {
+          margin-top: 0;
+          width: 100%;
+          flex-direction: column;
+          border: none;
+        }
+        .signup {
+          width: 90%;
+          margin-top: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body style="display: flex; justify-content: center">
+    <div class="parent">
+      <div class="LogoArea">
+        <a class="logo-area" href="./index.html">
+          <img
+            class="logo"
+            style="width: 6rem; height: 6rem"
+            src="./images/logoDummy.png"
+          />
+          <h1 class="logoName" style="font-size: 3rem">Furnocart</h1>
+        </a>
+      </div>
+      <form class="signup">
+        <div style="display: flex; align-items: center">
+          <h1 class="heading">Track your order</h1>
+          <img
+            style="width: 3rem; height: 3rem; margin-left: 0.5rem"
+            src="./images/locationIcon.png"
+          />
+        </div>
+        <h3 style="margin-top: 2rem">Tracking ID</h3>
+        <input
+          type="text"
+          class="searchBox"
+          style="width: 90%; height: 1rem; padding: 0.5rem 0.5rem 0.5rem 0.5rem"
+        />
+        <h3 style="margin-top: 1rem">Password</h3>
+        <input
+          type="password"
+          class="searchBox"
+          style="width: 90%; height: 1rem; padding: 0.5rem 0.5rem 0.5rem 0.5rem"
+        />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs - Furnocart</title>
+    <link rel="stylesheet" href="homeStyle.css" />
+    <style>
+      dt {
+        margin: 1rem;
+        font-size: 1.5rem;
+      }
+      .heading {
+        display: inline;
+        position: relative;
+        color: brown;
+      }
+      .heading::after {
+        position: absolute;
+        left: 0;
+        bottom: 0rem;
+        display: block;
+        width: 0;
+        height: 0.2rem;
+        content: "";
+        background-color: orange;
+        transition: all 0.2s;
+      }
+      .heading:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="logo-area" href="./index.html">
+      <img
+        class="logo"
+        style="width: 6rem; height: 6rem"
+        src="./images/logoDummy.png"
+      />
+      <h1 class="logoName" style="font-size: 3rem">Furnocart</h1>
+    </a>
+    <div style="padding: 2rem">
+      <h1 class="heading">FAQs</h1>
+      <dl style="margin-top: 2rem">
+        <dt>I missed the delivery of my order today. What should I do?</dt>
+        <dt>
+          Will the delivery be tried again if I'm not able to collect my order
+          the first time?
+        </dt>
+        <dt>How quickly can I get my order delivered?</dt>
+        <dt>Why can't I track my order even though it has been shipped?</dt>
+        <dt>How will my order be delivered?</dt>
+        <dt>Where can I find the seller's returns policy?</dt>
+        <dt>
+          Why is the 'Cash on Delivery' payment mode not available at my
+          location?
+        </dt>
+      </dl>
+    </div>
+  </body>
+</html>

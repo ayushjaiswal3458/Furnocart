@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furnocart - Home</title>
+    <link rel="stylesheet" href="homeStyle.css" />
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    "
+  >
+    <nav class="navbar">
+      <div class="layer1">
+        <div class="layer1-leftside">
+          <a class="defaultLink" href="Help.html">Help</a>
+          <a class="defaultLink" href="Track.html">Track Order</a>
+        </div>
+      </div>
+      <div class="layer2">
+        <a class="logo-area" href="./index.html">
+          <img class="logo" src="./images/logoDummy.png" />
+          <h1 class="logoName">Furnocart</h1>
+        </a>
+        <div class="layer2Mini">
+          <div class="searchArea">
+            <input class="searchBox" placeholder="Search" />
+            <a href="#">
+              <img class="searchIcon" src="./images/search.png" />
+            </a>
+          </div>
+          <div class="layer2IconGroup">
+            <label class="account">
+              <svg class="layer2Icon" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  d="M3.07 21c.17-1.35.958-4.98 4.325-6.41.07.06.14.11.22.16.03.03.06.06.1.08.11.09.23.17.35.24.1.06.21.13.32.18.238.15.498.27.758.38.12.05.25.1.38.15.79.28 1.628.43 2.487.43.63 0 1.26-.08 1.858-.24.11-.02.23-.06.34-.1.13-.03.26-.08.39-.13.18-.06.36-.14.53-.22.17-.08.33-.16.488-.26.13-.06.25-.14.37-.22.07-.04.13-.08.19-.12.12-.08.24-.17.35-.26.03-.02.05-.04.08-.06 3.566 1.5 4.235 5.07 4.365 6.4H3.07zM5.735 9.11C5.735 5.74 8.553 3 12.01 3s6.274 2.74 6.274 6.11c0 1.18-.35 2.33-1.02 3.32-.25.38-.53.72-.858 1.03l-.22.19c-1.15 1-2.628 1.56-4.176 1.56-1.558 0-3.047-.56-4.196-1.57-.41-.35-.77-.76-1.07-1.21-.658-.99-1.008-2.14-1.008-3.32zm11.66 4.76c.258-.27.488-.57.698-.88.78-1.16 1.19-2.5 1.19-3.88 0-3.92-3.268-7.11-7.274-7.11-4.017 0-7.274 3.19-7.274 7.11 0 1.38.41 2.72 1.18 3.88.21.31.44.6.688.87-4.365 2.13-4.575 7.39-4.585 7.62L2 22h20v-.5c0-.06-.05-5.42-4.605-7.63z"
+                ></path>
+              </svg>
+              <div class="headerMenu" style="left: 0">
+                <a class="headerMenuOption" href="./loginpage.html">Log In</a>
+                <a class="headerMenuOption" href="./signuppage.html">Sign Up</a>
+              </div>
+            </label>
+            <a href="#">
+              <svg class="layer2Icon" viewBox="0 0 20 20">
+                <path
+                  d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"
+                ></path>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="layer2Icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.671,13.945l0.003,0.002l1.708-7.687l-0.008-0.002c0.008-0.033,0.021-0.065,0.021-0.102c0-0.236-0.191-0.428-0.427-0.428H5.276L4.67,3.472L4.665,3.473c-0.053-0.175-0.21-0.306-0.403-0.306H1.032c-0.236,0-0.427,0.191-0.427,0.427c0,0.236,0.191,0.428,0.427,0.428h2.902l2.667,9.945l0,0c0.037,0.119,0.125,0.217,0.239,0.268c-0.16,0.26-0.257,0.562-0.257,0.891c0,0.943,0.765,1.707,1.708,1.707S10,16.068,10,15.125c0-0.312-0.09-0.602-0.237-0.855h4.744c-0.146,0.254-0.237,0.543-0.237,0.855c0,0.943,0.766,1.707,1.708,1.707c0.944,0,1.709-0.764,1.709-1.707c0-0.328-0.097-0.631-0.257-0.891C17.55,14.182,17.639,14.074,17.671,13.945 M15.934,6.583h2.502l-0.38,1.709h-2.312L15.934,6.583zM5.505,6.583h2.832l0.189,1.709H5.963L5.505,6.583z M6.65,10.854L6.192,9.146h2.429l0.19,1.708H6.65z M6.879,11.707h2.027l0.189,1.709H7.338L6.879,11.707z M8.292,15.979c-0.472,0-0.854-0.383-0.854-0.854c0-0.473,0.382-0.855,0.854-0.855s0.854,0.383,0.854,0.855C9.146,15.596,8.763,15.979,8.292,15.979 M11.708,13.416H9.955l-0.189-1.709h1.943V13.416z M11.708,10.854H9.67L9.48,9.146h2.228V10.854z M11.708,8.292H9.386l-0.19-1.709h2.512V8.292z M14.315,13.416h-1.753v-1.709h1.942L14.315,13.416zM14.6,10.854h-2.037V9.146h2.227L14.6,10.854z M14.884,8.292h-2.321V6.583h2.512L14.884,8.292z M15.978,15.979c-0.471,0-0.854-0.383-0.854-0.854c0-0.473,0.383-0.855,0.854-0.855c0.473,0,0.854,0.383,0.854,0.855C16.832,15.596,16.45,15.979,15.978,15.979 M16.917,13.416h-1.743l0.189-1.709h1.934L16.917,13.416z M15.458,10.854l0.19-1.708h2.218l-0.38,1.708H15.458z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="layer3">
+        <div class="layer3Header">
+          <label class="header">Bedroom</label>
+          <div class="headerMenu" style="left: 0">
+            <a class="headerMenuOption" href="./Bed.html">Bed</a>
+            <a class="headerMenuOption" href="./Mattess.html">Mattress</a>
+          </div>
+        </div>
+        <div class="layer3Header">
+          <label class="header">Living</label>
+          <div class="headerMenu" style="left: 0rem">
+            <a class="headerMenuOption" href="./Sofa.html">Sofa</a>
+            <a class="headerMenuOption" href="./Table.html">Table</a>
+          </div>
+        </div>
+        <div class="layer3Header">
+          <label class="header">Dining</label>
+          <div class="headerMenu" style="left: 0rem">
+            <a class="headerMenuOption" href="./DiningTable.html"
+              >Dining Table</a
+            >
+            <a class="headerMenuOption" href="./DiningChair.html"
+              >Dining Chair</a
+            >
+          </div>
+        </div>
+        <div class="layer3Header">
+          <label class="header">Study</label>
+          <div class="headerMenu" style="right: 0rem">
+            <a class="headerMenuOption" href="./Bookshelf.html">Bookshelf</a>
+            <a class="headerMenuOption" href="./ComputerTable.html"
+              >Computer Table</a
+            >
+          </div>
+        </div>
+        <div class="layer3Header">
+          <label class="header">Kids Room</label>
+          <div class="headerMenu" style="right: 0rem">
+            <a class="headerMenuOption" href="./NursingChair.html"
+              >Nursing Chair</a
+            >
+            <a class="headerMenuOption" href="./KidsBedsheets.html"
+              >Kids Bedsheet</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="slideshow">
+        <img
+          style="
+            width: 100%;
+            max-height: 352.5px;
+            object-fit: fill;
+            transition: ease-in-out;
+            transition-duration: 300ms;
+            transition-property: all;
+          "
+          id="slider-image"
+          src="./images/slideshowDummy.jpg"
+        />
+        <button
+          class="slideshowNav"
+          onclick="prev()"
+          style="
+            left: 0;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            box-shadow: 4px 4px 4px white;
+          "
+        >
+          &lt;
+        </button>
+        <button
+          class="slideshowNav"
+          onclick="next()"
+          style="
+            right: 0;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            box-shadow: -4px 4px 4px white;
+          "
+        >
+          &gt;
+        </button>
+      </div>
+      <div class="bestsellersSection">
+        <label class="bestsellersHeader">Bestsellers</label>
+        <div class="bestsellersItems">
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/kidbedsheet1.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Jungle Book</h5>
+              <h5 class="bestsellerPrice">Rs. 750</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/nursingchair4.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Funky Chair</h5>
+              <h5 class="bestsellerPrice">Rs. 1600</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/sofa4.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Giant Maroon</h5>
+              <h5 class="bestsellerPrice">Rs. 20000</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/livtable4.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Side Table</h5>
+              <h5 class="bestsellerPrice">Rs. 3000</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/livtable1.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Square Black</h5>
+              <h5 class="bestsellerPrice">Rs. 10000</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/pctable3.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Modern Blue</h5>
+              <h5 class="bestsellerPrice">Rs. 14000</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/bed2.jpeg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Regular Double-Bed</h5>
+              <h5 class="bestsellerPrice">Rs. 40000</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/bookshelf4.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Classic Regular</h5>
+              <h5 class="bestsellerPrice">Rs. 16000</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/dintable3.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Classic Brown</h5>
+              <h5 class="bestsellerPrice">Rs. 14900</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/dinchair3.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Vintage style</h5>
+              <h5 class="bestsellerPrice">Rs. 1200</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/kidbedsheet3.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Ninja Hattori</h5>
+              <h5 class="bestsellerPrice">Rs. 660</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img class="bestsellerImage" src="./images/sofa2.jpg" />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Napper</h5>
+              <h5 class="bestsellerPrice">Rs. 28000</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviewSection">
+        <div class="reviewHeaderSection">
+          <button class="reviewNav" onclick="setPreviousReview()">
+            &lt;Prev
+          </button>
+          <label class="reviewHeader">Customer Reviews</label>
+          <button class="reviewNav" onclick="setNextReview()">Next&gt;</button>
+        </div>
+        <div class="reviewContent">
+          <div class="customerInfo">
+            <img
+              class="customerAvatar"
+              src="./images/customerAvatarDummy.png"
+            />
+            <h3 class="customerName">Customer</h3>
+          </div>
+          <div class="reviewDivider"></div>
+          <div class="review">
+            <p id="reviewText" class="reviewText">
+              We’re loving the clean, modern sofa put together by @Furnocart.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="siteLinksSection">
+        <a
+          class="logoName"
+          href="#"
+          style="font-size: 2rem; font-weight: bold; margin-bottom: 2rem"
+        >
+          Furnocart
+        </a>
+        <ul style="list-style: none">
+          <li>
+            <a href="#" onclick="showContact()" class="siteLink">Contact</a>
+          </li>
+          <li><a href="./About.html" class="siteLink">About</a></li>
+          <li><a href="./FAQs.html" class="siteLink">FAQs</a></li>
+          <li><a href="#" class="siteLink">Review</a></li>
+        </ul>
+      </div>
+      <div class="socialMediaSection">
+        <a
+          href="#"
+          class="socialMediaLinks"
+          style="background-image: url(./images/facebook.png)"
+        ></a>
+        <a
+          href="#"
+          class="socialMediaLinks"
+          style="background-image: url(./images/youtube.png)"
+        ></a>
+        <a
+          href="#"
+          class="socialMediaLinks"
+          style="background-image: url(./images/instagram.png)"
+        ></a>
+        <a
+          href="#"
+          class="socialMediaLinks"
+          style="background-image: url(./images/twitter.png)"
+        ></a>
+      </div>
+    </div>
+    <script src="homeSlides.js"></script>
+    <script src="customerReviews.js"></script>
+    <script>
+      function showContact() {
+        alert(
+          "Email: ayush.gupta_cs19@gla.ac.in\nAddress: 17km Stone, NH-2, Mathura-Delhi Road Mathura, Chaumuhan, Uttar Pradesh 281406"
+        );
+      }
+    </script>
+  </body>
+</html>
