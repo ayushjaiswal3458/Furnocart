@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Furnocart
 
 This repository is FullStack project based on furniture selling e-commerce website named 'Furnocart'. The project is so far being developed on FrontEnd aspects only.
@@ -14,3 +15,6 @@ This repository is FullStack project based on furniture selling e-commerce websi
 6. IMAGE - https://www.iconfinder.com/icons/5296516/tweet_twitter_twitter_logo_icon
 7. IMAGE - https://www.iconfinder.com/icons/2609558/instagram_social_media_social_icon
 8. IMAGE - https://www.iconfinder.com/icons/317714/video_youtube_icon
+=======
+# Furnocart
+>>>>>>> ff4baef8c6876fc02cfa997241392f6580e453d0
